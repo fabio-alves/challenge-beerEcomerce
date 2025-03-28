@@ -22,14 +22,16 @@
 
 .sizeBtns button {
   padding: 0.5rem 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid #969696;
   background: white;
   cursor: pointer;
+  border-radius: 15.5px;
+  color: #969696;
 }
 
 .sizeBtns button.active {
-  background: black;
-  color: white;
+  color: #ff9f24;
+  border-color: #ff9f24;
 }
 
 .cartBtn {

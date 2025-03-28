@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchProducts, fetchStockPrice } from "../api";
 import styles from "./ProductDetailPage.module.css";
+import iconBack from "../img/utils/icon-back.svg";
+import dots from "../img/utils/icon-dots.svg";
+import { Link } from "react-router-dom";
 
 export default function ProductDetailPage() {
   //todo: improve css
@@ -35,6 +38,13 @@ export default function ProductDetailPage() {
 
   return (
     <div className={styles.detail}>
+      <div className={styles.headerBar}>
+        <Link to={"/products"}>
+          <img src={iconBack} />
+        </Link>
+        Detail
+        <img src={dots} />
+      </div>
       <img src={require(`../img${product.image}`)} alt={product.brand} />
       <h1>
         {product.brand}{" "}

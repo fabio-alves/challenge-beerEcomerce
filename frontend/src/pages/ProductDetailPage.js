@@ -48,11 +48,12 @@ export default function ProductDetailPage() {
       <img src={require(`../img${product.image}`)} alt={product.brand} />
       <h1>
         {product.brand}{" "}
-        <span>${stockPrice ? (stockPrice.price / 100).toFixed(2) : "..."}</span>
+        <span className={styles.price}>
+          ${stockPrice ? (stockPrice.price / 100).toFixed(2) : "..."}
+        </span>
       </h1>
-      <p>
-        <strong>Origin:</strong> {product.origin} | <strong>Stock:</strong>{" "}
-        {stockPrice?.stock ?? "..."}
+      <p className={styles.logisticDetails}>
+        Origin:{product.origin} | Stock: {stockPrice?.stock ?? "..."}
       </p>
       <h4>Description</h4>
       <p>
@@ -71,7 +72,7 @@ export default function ProductDetailPage() {
           </button>
         ))}
       </div>
-
+      <div></div>
       <button
         className={styles.cartBtn}
         onClick={() => alert(`Added to cart: SKU ${selectedSku}`)}

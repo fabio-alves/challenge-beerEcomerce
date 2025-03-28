@@ -57,3 +57,12 @@
   width: 34px;
   height: 34px;
 }
+
+.price {
+  color: #ff9f24;
+}
+
+.logisticDetails {
+  color: #969696;
+  font-size: 14px;
+}

@@ -1,10 +1,7 @@
 .detail {
   padding: 1rem;
-}
-
-.detail img {
-  width: 100%;
-  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
 .detail h1 {
@@ -54,8 +51,10 @@
 }
 
 .headerBar img {
+  background-color: #fff;
   width: 34px;
   height: 34px;
+  border-radius: 12px;
 }
 
 .price {
@@ -65,4 +64,23 @@
 .logisticDetails {
   color: #969696;
   font-size: 14px;
+}
+
+.description {
+  color: #646464;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.wrapperPictureBeer {
+  height: 240px;
+  width: 240px;
+  align-self: center;
+  overflow: hidden;
+  background-size: 240px 240px;
+}
+
+.wrapperPictureBeer img {
+  max-width: 100%;
+  max-height: 100%;
 }

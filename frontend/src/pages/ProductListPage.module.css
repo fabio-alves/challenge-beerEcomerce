@@ -29,8 +29,13 @@
 }
 
 .card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.wrapperImg {
   width: 122px;
-  max-height: 122px;
+  height: 122px;
 }
 
 .btn {
@@ -39,7 +44,8 @@
   padding: 0.25rem 0.75rem;
   background: black;
   color: white;
-  border-radius: 4px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   text-decoration: none;
   background-color: #ff9f24;
 }

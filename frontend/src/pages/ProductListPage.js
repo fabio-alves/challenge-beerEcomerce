@@ -20,7 +20,9 @@ export default function ProductListPage() {
         {products.map((beer) => (
           <div key={beer.id} className={styles.card}>
             <div className={styles.titlecard}>{beer.brand}</div>
-            <img src={require(`../img${beer.image}`)} alt={beer.brand} />
+            <div className={styles.wrapperImg}>
+              <img src={require(`../img${beer.image}`)} alt={beer.brand} />
+            </div>
             <div className={styles.footerCard}>
               <div className={styles.priceCard}>$ </div>
               <Link

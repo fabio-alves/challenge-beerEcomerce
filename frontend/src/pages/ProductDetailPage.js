@@ -45,7 +45,9 @@ export default function ProductDetailPage() {
         Detail
         <img src={dots} />
       </div>
-      <img src={require(`../img${product.image}`)} alt={product.brand} />
+      <div className={styles.wrapperPictureBeer}>
+        <img src={require(`../img${product.image}`)} alt={product.brand} />
+      </div>
       <h1>
         {product.brand}{" "}
         <span className={styles.price}>
@@ -56,7 +58,7 @@ export default function ProductDetailPage() {
         Origin:{product.origin} | Stock: {stockPrice?.stock ?? "..."}
       </p>
       <h4>Description</h4>
-      <p>
+      <p className={styles.description}>
         {product.information.slice(0, 180)}... <a href="#">Read more</a>
       </p>
 
